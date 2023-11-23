@@ -13,7 +13,7 @@ export default function HorizontalCard() {
   return (
     <div className="flex flex-col space-y-3 w-full items-center my-6 ">
 
-        <div className="mr-auto ml-[12rem]">
+        <div className="mx-auto md:mr-auto md:ml-[12rem]">
 
 
             <Breadcrumbs className="">
