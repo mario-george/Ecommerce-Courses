@@ -4,6 +4,11 @@ import { Roboto_Flex } from "next/font/google";
 import { Roboto } from "next/font/google";
 import { exo2, orbitron } from "@/components/fonts";
 import Layout from "@/components/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaypal } from "@fortawesome/free-brands-svg-icons";
+import AlkhabeerComponent from "@/components/Alkhaber";
+
+import Footer from "@/components/Footer";
 import CartProvider from "@/components/CartProvider";
 const roboto = Roboto({
   subsets: ["latin"],
@@ -23,10 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${exo2.className} ${orbitron.className}`}>
       <body className=" bg-gray-50">
-      <CartProvider>
-        <Layout />
-        <main>{children}</main>
-        <footer className="p-4 text-center border-t text-slate-800"></footer>
+        <CartProvider>
+          <Layout></Layout>
+          <main>{children}</main>
+          <footer className="p-4 text-center border-t text-slate-800">
+            <AlkhabeerComponent />
+
+            <Footer />
+          </footer>
         </CartProvider>
       </body>
     </html>

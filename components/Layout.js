@@ -118,7 +118,7 @@ export default function Layout() {
     );
   }, []);
   return (
-    <>
+    <div>
       <Navbar
         color="brown"
         className=" bg-black text-white sticky inset-0 z-30 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4"
@@ -186,6 +186,6 @@ export default function Layout() {
         </div>
         <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
-    </>
+    </div>
   );
 }
