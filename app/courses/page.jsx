@@ -20,8 +20,8 @@ export default async function CoursesPage() {
           </h1>
         </div>
       </div>
-      <div className="ml-[4rem] my-3">
-        <Breadcrumbs className="">
+      <div className="flex md:block justify-center  w-full mx-auto md:ml-[4rem] my-3">
+        <Breadcrumbs className="mx-auto">
           <Link href="/home" className="opacity-60">
             Home
           </Link>
